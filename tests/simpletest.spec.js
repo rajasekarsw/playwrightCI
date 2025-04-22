@@ -1,6 +1,6 @@
 import {test} from '@playwright/test';
 
-test("sample google page test",({page})=>{
+test("sample google page test",async ({page})=>{
 
-    page.goto("https://google.com");
-})
+   await page.goto("https://google.com/");
+});
